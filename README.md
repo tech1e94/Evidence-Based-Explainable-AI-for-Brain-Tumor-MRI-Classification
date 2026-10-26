@@ -77,6 +77,3 @@ train.py  run_xai_evaluation.py  app.py  tumor_enhanced.ipynb (original)  tumor_
 ## Limitations
 The highlighted region is where the *model* looked, not a tumour segmentation; intensity descriptions are image statistics, not diagnoses;
 slice orientation varies in this dataset, so anatomical words are deliberately generic; the Kaggle data has no patient-level split guarantees, so test accuracy may be optimistic.
-
-## Author
-Gaurav
