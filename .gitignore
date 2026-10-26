@@ -1,0 +1,6 @@
+archive/
+models/*.keras
+models/*.h5
+*.joblib
+__pycache__/
+.ipynb_checkpoints/

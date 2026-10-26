@@ -1,0 +1,15 @@
+numpy
+scipy
+pandas
+matplotlib
+seaborn
+opencv-python
+pillow
+scikit-learn
+scikit-image
+tensorflow>=2.16      # Keras 3
+lime
+tqdm
+joblib
+jupyter
+streamlit             # only for app.py

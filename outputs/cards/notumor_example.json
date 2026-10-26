@@ -1,0 +1,909 @@
+{
+  "class_names": [
+    "glioma",
+    "meningioma",
+    "notumor",
+    "pituitary"
+  ],
+  "true_label": 2,
+  "pred": 2,
+  "explained_class": 2,
+  "second": 1,
+  "probs_raw": [
+    1.8585305383567174e-07,
+    0.0007039885385893285,
+    0.9992836117744446,
+    1.2179372788523324e-05
+  ],
+  "probs_calibrated": [
+    7.651902706129476e-06,
+    0.004008016083389521,
+    0.9958006739616394,
+    0.00018367980374023318
+  ],
+  "temperature": 1.3159930886809037,
+  "confidence": 0.9958006739616394,
+  "margin": 0.9917926788330078,
+  "entropy_norm": 0.020185317541887897,
+  "tta": {
+    "mean_probs": [
+      3.5094001304969424e-07,
+      0.0006155826267786324,
+      0.9993554353713989,
+      2.8523505534394644e-05
+    ],
+    "agreement": 1.0,
+    "std_top": 0.0004274932143744081,
+    "mutual_information": 0.0001275939866900444,
+    "n": 16
+  },
+  "mc_dropout": null,
+  "brain_mask_ok": true,
+  "methods": {
+    "gradcam": {
+      "label": "Grad-CAM",
+      "auc_deletion": 0.34932989703352757,
+      "auc_insertion": 0.6131680129593375,
+      "faithfulness": 0.26383811592580997,
+      "curves": {
+        "fractions": [
+          0.0,
+          0.05,
+          0.1,
+          0.15000000000000002,
+          0.2,
+          0.25,
+          0.30000000000000004,
+          0.35000000000000003,
+          0.4,
+          0.45,
+          0.5,
+          0.55,
+          0.6000000000000001,
+          0.65,
+          0.7000000000000001,
+          0.75,
+          0.8,
+          0.8500000000000001,
+          0.9,
+          0.9500000000000001,
+          1.0
+        ],
+        "deletion": [
+          0.9992836117744446,
+          0.9979034662246704,
+          0.994785487651825,
+          0.9827032089233398,
+          0.9376094341278076,
+          0.8516302108764648,
+          0.6273337006568909,
+          0.43993091583251953,
+          0.33509835600852966,
+          0.15910716354846954,
+          0.09846074134111404,
+          0.03634151443839073,
+          0.014342906884849072,
+          0.009522480890154839,
+          0.001335415756329894,
+          0.0007079823990352452,
+          0.0001341434835921973,
+          7.477738108718768e-06,
+          9.374626870339853e-07,
+          5.613446205643413e-07,
+          6.942202190884927e-08
+        ],
+        "insertion": [
+          6.942202190884927e-08,
+          4.504113633174711e-07,
+          1.1021184036508203e-05,
+          0.00013825800851918757,
+          0.0015958163421601057,
+          0.0061483122408390045,
+          0.05161573365330696,
+          0.30237120389938354,
+          0.6164973974227905,
+          0.8808482885360718,
+          0.945472776889801,
+          0.9786106944084167,
+          0.9916543960571289,
+          0.9956082701683044,
+          0.9978006482124329,
+          0.9986037611961365,
+          0.9989439845085144,
+          0.9989388585090637,
+          0.9992699027061462,
+          0.9995885491371155,
+          0.9992836117744446
+        ]
+      }
+    },
+    "gradcampp": {
+      "label": "Grad-CAM++",
+      "auc_deletion": 0.3418885450977584,
+      "auc_insertion": 0.6314367936001416,
+      "faithfulness": 0.2895482485023832,
+      "curves": {
+        "fractions": [
+          0.0,
+          0.05,
+          0.1,
+          0.15000000000000002,
+          0.2,
+          0.25,
+          0.30000000000000004,
+          0.35000000000000003,
+          0.4,
+          0.45,
+          0.5,
+          0.55,
+          0.6000000000000001,
+          0.65,
+          0.7000000000000001,
+          0.75,
+          0.8,
+          0.8500000000000001,
+          0.9,
+          0.9500000000000001,
+          1.0
+        ],
+        "deletion": [
+          0.9992836117744446,
+          0.998668909072876,
+          0.9956004619598389,
+          0.9874259233474731,
+          0.9582181572914124,
+          0.8750374913215637,
+          0.6481436491012573,
+          0.4831005334854126,
+          0.27609333395957947,
+          0.09193035960197449,
+          0.019505508244037628,
+          0.003616789821535349,
+          0.000527535448782146,
+          0.00013605557614937425,
+          6.317897350527346e-05,
+          4.682160579250194e-05,
+          1.0443362043588422e-05,
+          3.4043537198158447e-06,
+          3.0781305326854635e-07,
+          1.5249104023951077e-07,
+          6.942202190884927e-08
+        ],
+        "insertion": [
+          6.942202190884927e-08,
+          1.3312132068676874e-05,
+          0.00013346542255021632,
+          0.0013851589756086469,
+          0.014798149466514587,
+          0.05099836736917496,
+          0.15797768533229828,
+          0.41976597905158997,
+          0.7293119430541992,
+          0.9102680683135986,
+          0.9499302506446838,
+          0.9751465916633606,
+          0.9723145961761475,
+          0.9780524373054504,
+          0.9862104058265686,
+          0.9934884309768677,
+          0.9948809146881104,
+          0.9968687891960144,
+          0.998386025428772,
+          0.9991635084152222,
+          0.9992836117744446
+        ]
+      }
+    },
+    "ig": {
+      "label": "Integrated Gradients",
+      "auc_deletion": 0.3178068253971294,
+      "auc_insertion": 0.7191267084621358,
+      "faithfulness": 0.4013198830650064,
+      "curves": {
+        "fractions": [
+          0.0,
+          0.05,
+          0.1,
+          0.15000000000000002,
+          0.2,
+          0.25,
+          0.30000000000000004,
+          0.35000000000000003,
+          0.4,
+          0.45,
+          0.5,
+          0.55,
+          0.6000000000000001,
+          0.65,
+          0.7000000000000001,
+          0.75,
+          0.8,
+          0.8500000000000001,
+          0.9,
+          0.9500000000000001,
+          1.0
+        ],
+        "deletion": [
+          0.9992836117744446,
+          0.999602735042572,
+          0.9995482563972473,
+          0.9988068342208862,
+          0.9926555156707764,
+          0.9324601292610168,
+          0.6655237078666687,
+          0.1668415367603302,
+          0.06183474138379097,
+          0.028761515393853188,
+          0.008986994624137878,
+          0.0013319806894287467,
+          0.00012197998876217753,
+          1.4873835425532889e-05,
+          2.745201982179424e-06,
+          6.283515858740429e-07,
+          1.954976482920756e-07,
+          1.2368374768811918e-07,
+          9.200211792403934e-08,
+          6.861728962803681e-08,
+          6.942202190884927e-08
+        ],
+        "insertion": [
+          6.942202190884927e-08,
+          0.0003210731956642121,
+          0.008137340657413006,
+          0.10430338233709335,
+          0.41580289602279663,
+          0.4846615791320801,
+          0.6688930988311768,
+          0.8136034607887268,
+          0.8784963488578796,
+          0.8878716826438904,
+          0.8958496451377869,
+          0.9154615998268127,
+          0.9326314926147461,
+          0.9503167867660522,
+          0.9669945240020752,
+          0.9803874492645264,
+          0.9887003302574158,
+          0.9946227073669434,
+          0.9971628785133362,
+          0.9986740350723267,
+          0.9992836117744446
+        ]
+      }
+    },
+    "occlusion": {
+      "label": "Occlusion",
+      "auc_deletion": 0.400686981759982,
+      "auc_insertion": 0.5372973484589237,
+      "faithfulness": 0.13661036669894172,
+      "curves": {
+        "fractions": [
+          0.0,
+          0.05,
+          0.1,
+          0.15000000000000002,
+          0.2,
+          0.25,
+          0.30000000000000004,
+          0.35000000000000003,
+          0.4,
+          0.45,
+          0.5,
+          0.55,
+          0.6000000000000001,
+          0.65,
+          0.7000000000000001,
+          0.75,
+          0.8,
+          0.8500000000000001,
+          0.9,
+          0.9500000000000001,
+          1.0
+        ],
+        "deletion": [
+          0.9992836117744446,
+          0.9975565671920776,
+          0.9948477745056152,
+          0.9887300133705139,
+          0.9758890867233276,
+          0.9569835662841797,
+          0.912358283996582,
+          0.811991810798645,
+          0.533111572265625,
+          0.2354183942079544,
+          0.08538340777158737,
+          0.018292509019374847,
+          0.002425386803224683,
+          0.0007745471084490418,
+          0.00024550253874622285,
+          5.968987534288317e-05,
+          2.160503026971128e-05,
+          5.697773758583935e-06,
+          1.66325253303512e-06,
+          6.970271897444036e-07,
+          6.942202190884927e-08
+        ],
+        "insertion": [
+          6.942202190884927e-08,
+          1.1325104196657776e-06,
+          1.7883256759887445e-06,
+          2.3533229978056625e-05,
+          0.00013637414667755365,
+          0.0005083131836727262,
+          0.003021321026608348,
+          0.028030572459101677,
+          0.14888598024845123,
+          0.412025511264801,
+          0.7261366248130798,
+          0.942399263381958,
+          0.9937229752540588,
+          0.9976605176925659,
+          0.9979234933853149,
+          0.9984415173530579,
+          0.998961329460144,
+          0.9993197917938232,
+          0.9995163679122925,
+          0.999588668346405,
+          0.9992836117744446
+        ]
+      }
+    }
+  },
+  "method_errors": {},
+  "consensus": {
+    "methods_used": [
+      "gradcam",
+      "gradcampp",
+      "ig",
+      "occlusion"
+    ],
+    "primary": "ig",
+    "auc_deletion": 0.347840939870126,
+    "auc_insertion": 0.6659736293290279,
+    "faithfulness": 0.31813268945890194,
+    "curves": {
+      "fractions": [
+        0.0,
+        0.05,
+        0.1,
+        0.15000000000000002,
+        0.2,
+        0.25,
+        0.30000000000000004,
+        0.35000000000000003,
+        0.4,
+        0.45,
+        0.5,
+        0.55,
+        0.6000000000000001,
+        0.65,
+        0.7000000000000001,
+        0.75,
+        0.8,
+        0.8500000000000001,
+        0.9,
+        0.9500000000000001,
+        1.0
+      ],
+      "deletion": [
+        0.9992836117744446,
+        0.9982335567474365,
+        0.9956165552139282,
+        0.9867014288902283,
+        0.9705235958099365,
+        0.9317076206207275,
+        0.8109550476074219,
+        0.42686596512794495,
+        0.17797192931175232,
+        0.11305279284715652,
+        0.031563837081193924,
+        0.013059948571026325,
+        0.0007268812041729689,
+        0.00016303337179124355,
+        2.8953529181308113e-05,
+        3.202314246664173e-06,
+        1.7587066167834564e-06,
+        4.003364892923855e-07,
+        2.691236318241863e-07,
+        2.273074386494045e-07,
+        6.942202190884927e-08
+      ],
+      "insertion": [
+        6.942202190884927e-08,
+        9.960291208699346e-06,
+        0.00019662041449919343,
+        0.004033003468066454,
+        0.027815768495202065,
+        0.12600450217723846,
+        0.3248203694820404,
+        0.5765115022659302,
+        0.8806749582290649,
+        0.9535187482833862,
+        0.9773007035255432,
+        0.9830887913703918,
+        0.9864903688430786,
+        0.993302583694458,
+        0.9959650039672852,
+        0.9968624114990234,
+        0.9968525767326355,
+        0.9982252717018127,
+        0.9989768266677856,
+        0.9991806149482727,
+        0.9992836117744446
+      ]
+    }
+  },
+  "agreement": {
+    "mean_spearman": 0.46024946925709526,
+    "mean_iou": 0.26377065594832627,
+    "names": [
+      "gradcam",
+      "gradcampp",
+      "ig",
+      "occlusion"
+    ],
+    "spearman": [
+      [
+        1.0,
+        0.9094210188631552,
+        0.20109490392536275,
+        0.397832978961908
+      ],
+      [
+        0.9094210188631552,
+        1.0,
+        0.3045952557814926,
+        0.37798008549775636
+      ],
+      [
+        0.20109490392536275,
+        0.3045952557814926,
+        1.0,
+        0.5705725725128963
+      ],
+      [
+        0.397832978961908,
+        0.37798008549775636,
+        0.5705725725128963,
+        1.0
+      ]
+    ],
+    "iou": [
+      [
+        1.0,
+        0.7130664845950329,
+        0.13651548609931488,
+        0.169220015145337
+      ],
+      [
+        0.7130664845950329,
+        1.0,
+        0.15389479735556194,
+        0.16096940251026665
+      ],
+      [
+        0.13651548609931488,
+        0.15389479735556194,
+        1.0,
+        0.24895774998444403
+      ],
+      [
+        0.169220015145337,
+        0.16096940251026665,
+        0.24895774998444403,
+        1.0
+      ]
+    ]
+  },
+  "stability": {
+    "mean": 0.9802502733975984,
+    "min": 0.9785533416905674,
+    "values": [
+      0.9785533416905674,
+      0.9798193730119715,
+      0.9801833950463309,
+      0.9816400163477353,
+      0.9810552408913871
+    ],
+    "method": "ig"
+  },
+  "causal": {
+    "p_orig": 0.9992836117744446,
+    "p_removed": 0.9979198575019836,
+    "p_kept": 8.959007573139388e-06,
+    "drop": 0.0013637542724609375,
+    "sufficiency": 8.965430424723309e-06,
+    "class_after_removal": 2,
+    "probs_removed": [
+      2.400430048510316e-06,
+      0.0019475423032417893,
+      0.9979198575019836,
+      0.0001302364544244483
+    ],
+    "probs_kept": [
+      5.452523055282654e-06,
+      0.0036558699794113636,
+      8.959007573139388e-06,
+      0.9963297247886658
+    ],
+    "control_drops": [
+      0.0008519887924194336,
+      0.0006281733512878418,
+      0.0004890561103820801,
+      0.00019305944442749023,
+      0.0012558698654174805,
+      0.0008150339126586914,
+      0.0005480051040649414,
+      0.0012195110321044922,
+      0.0009297728538513184,
+      0.0013651847839355469,
+      0.0020917654037475586,
+      0.0005861520767211914,
+      0.0014057755470275879,
+      0.0005512237548828125,
+      0.0010273456573486328,
+      0.00027304887771606445,
+      0.0013360977172851562,
+      0.0016481280326843262,
+      0.001368880271911621,
+      0.0020686984062194824,
+      0.0001468658447265625,
+      0.002109706401824951,
+      0.0012764930725097656,
+      0.0006753206253051758,
+      0.001517951488494873,
+      0.0004208683967590332,
+      0.001131892204284668,
+      0.001639723777770996,
+      0.0008087158203125,
+      0.0008947253227233887
+    ],
+    "n_controls": 30,
+    "control_mean_drop": 0.0010425011860206723,
+    "effect_ratio": 1.3081560872525424,
+    "p_value": 0.3225806451612903
+  },
+  "features": {
+    "area_frac": 0.03160499837715028,
+    "dist_center": 0.6459371801044481,
+    "depth": 0.2954146507075811,
+    "midline_offset": 0.6493960374852931,
+    "rel_x": 0.6493960374852931,
+    "rel_y": 0.09505082696040544,
+    "contrast_z": -0.3860850930213928,
+    "heterogeneity": 1.0237293243408203,
+    "texture_entropy": 2.6823435760349312,
+    "glcm_contrast": 5.6699855155737495,
+    "glcm_homogeneity": 0.6812073406008246,
+    "solidity": 0.6713286713286714,
+    "eccentricity": 0.9697663829729981,
+    "compactness": 0.11356112709842138,
+    "boundary_sharpness": 2.3214855194091797,
+    "asymmetry_ratio": 2.0596725940704346,
+    "n_components": 3.0,
+    "in_brain_mass": 0.9289060060089741,
+    "rim_mass": 0.16015580070876884
+  },
+  "feature_words": {
+    "location": "middle, in the right half of the image, at mid-depth",
+    "size": "small",
+    "intensity": "similar in brightness to the surrounding brain (-0.4 SD)",
+    "shape": "elongated",
+    "edge": "a sharp boundary",
+    "texture": "heterogeneous",
+    "asymmetry": "markedly asymmetric vs. the opposite side"
+  },
+  "feature_vs_class_profile": {
+    "typical": [
+      {
+        "feature": "boundary_sharpness",
+        "z": 0.052389542951835524,
+        "value": 2.3214855194091797,
+        "typical_mean": 2.275247502326965,
+        "meaning": "edge strength along the region boundary vs. rest of brain"
+      },
+      {
+        "feature": "glcm_contrast",
+        "z": -0.1629414810311861,
+        "value": 5.6699855155737495,
+        "typical_mean": 6.406275537094819,
+        "meaning": "local texture contrast (GLCM)"
+      },
+      {
+        "feature": "compactness",
+        "z": -0.2642349386317328,
+        "value": 0.11356112709842138,
+        "typical_mean": 0.13207861858338363,
+        "meaning": "shape compactness (1 = perfect circle, low = irregular)"
+      }
+    ],
+    "unusual": [
+      {
+        "feature": "midline_offset",
+        "z": 2.494512624958469,
+        "value": 0.6493960374852931,
+        "typical_mean": 0.18179966028785643,
+        "meaning": "horizontal distance from the brain midline"
+      }
+    ]
+  },
+  "surrogate": {
+    "supporting": [
+      {
+        "feature": "heterogeneity",
+        "value": 1.0237293243408203,
+        "z": 2.533411667306462,
+        "contribution": 0.6339978008281769,
+        "meaning": "intensity variation inside the region (std / mean)"
+      },
+      {
+        "feature": "compactness",
+        "value": 0.11356112709842138,
+        "z": -0.6754868838897846,
+        "contribution": 0.40392185571881634,
+        "meaning": "shape compactness (1 = perfect circle, low = irregular)"
+      },
+      {
+        "feature": "contrast_z",
+        "value": -0.3860850930213928,
+        "z": -1.3773213205965307,
+        "contribution": 0.3672973263227276,
+        "meaning": "brightness vs. the surrounding brain (in standard deviations)"
+      },
+      {
+        "feature": "rel_y",
+        "value": 0.09505082696040544,
+        "z": 0.4032215551316033,
+        "contribution": 0.30571853332505394,
+        "meaning": "vertical position (-1 = top of the brain, +1 = bottom)"
+      }
+    ],
+    "opposing": [
+      {
+        "feature": "midline_offset",
+        "value": 0.6493960374852931,
+        "z": 2.5029962324838073,
+        "contribution": -0.2589973843457822,
+        "meaning": "horizontal distance from the brain midline"
+      },
+      {
+        "feature": "eccentricity",
+        "value": 0.9697663829729981,
+        "z": 0.4908371879484419,
+        "contribution": -0.24835181864921774,
+        "meaning": "shape eccentricity (0 = round, 1 = elongated)"
+      },
+      {
+        "feature": "n_components",
+        "value": 3.0,
+        "z": 0.6375498105247466,
+        "contribution": -0.17729038682849277,
+        "meaning": "number of separate evidence blobs"
+      },
+      {
+        "feature": "glcm_homogeneity",
+        "value": 0.6812073406008246,
+        "z": 0.49200140815098864,
+        "contribution": -0.08558886561911123,
+        "meaning": "texture homogeneity (GLCM)"
+      }
+    ],
+    "fidelity": 0.75
+  },
+  "surrogate_fidelity": {
+    "logreg": 0.75,
+    "majority_baseline": 0.3
+  },
+  "contrast": {
+    "second": 1,
+    "p_second": 0.004008016083389521,
+    "p_second_after_removal": 0.0019475423032417893,
+    "class_after_removal": 2,
+    "map_correlation": 0.8564700320281368
+  },
+  "attention": {
+    "spearman_with_consensus": 0.5948372243990703,
+    "iou_with_consensus": 0.3643964110929853
+  },
+  "channels": {
+    "channels": [
+      158,
+      89,
+      126,
+      45,
+      188
+    ],
+    "contribution": [
+      0.0021556958090513945,
+      0.0014831569278612733,
+      0.0011721538612619042,
+      0.0009562676423229277,
+      0.0008373013697564602
+    ],
+    "mean_activation": [
+      7.2869486808776855,
+      6.2050275802612305,
+      5.600633144378662,
+      3.4787187576293945,
+      8.780441284179688
+    ],
+    "p_orig": 0.9992836117744446,
+    "ablation_supported": true,
+    "p_without_each": [
+      0.9928845763206482,
+      0.997687816619873,
+      0.9953811168670654,
+      0.9984737038612366,
+      0.9991440773010254
+    ],
+    "drop_each": [
+      0.006399035453796387,
+      0.0015957951545715332,
+      0.0039024949073791504,
+      0.0008099079132080078,
+      0.00013953447341918945
+    ],
+    "p_without_top_k": 0.8716267347335815,
+    "drop_top_k": 0.12765687704086304,
+    "random_channel_drop_mean": 0.0004764974117279053
+  },
+  "neighbours": [
+    {
+      "index": 102,
+      "label": 2,
+      "similarity": 0.9661917686462402,
+      "path": "archive\\Training\\notumor\\Tr-no_645.jpg"
+    },
+    {
+      "index": 84,
+      "label": 2,
+      "similarity": 0.9634648561477661,
+      "path": "archive\\Training\\notumor\\Tr-no_1140.jpg"
+    },
+    {
+      "index": 114,
+      "label": 2,
+      "similarity": 0.944841206073761,
+      "path": "archive\\Training\\notumor\\Tr-no_895.jpg"
+    },
+    {
+      "index": 107,
+      "label": 2,
+      "similarity": 0.9387454390525818,
+      "path": "archive\\Training\\notumor\\Tr-no_763.jpg"
+    },
+    {
+      "index": 97,
+      "label": 2,
+      "similarity": 0.9248479604721069,
+      "path": "archive\\Training\\notumor\\Tr-no_35.jpg"
+    }
+  ],
+  "sanity": {
+    "mean_abs_rho_full_random": 0.14840373215245378,
+    "mean_abs_rho_head_random": 0.47365103688454624,
+    "rho_full": [
+      -0.11667512389989017,
+      0.1226227066957006,
+      0.04056844330215507,
+      0.5871853883529689,
+      0.10115293578780693,
+      0.12600284242545262,
+      -0.026332653151603217,
+      0.2297809181154274,
+      -0.0785984046126075,
+      -0.055117905180925096
+    ],
+    "rho_head": [
+      0.43920129894115306,
+      -0.20068922222377608,
+      -0.6091889463251864,
+      0.9074390241828135,
+      -0.7020993037782124,
+      -0.5864492378670128,
+      0.3273279529334025,
+      -0.10372122573913405,
+      -0.7951966833231707,
+      -0.06519747353160062
+    ],
+    "passed": true
+  },
+  "checklist": [
+    {
+      "name": "Calibrated confidence",
+      "value": "100%",
+      "passed": true,
+      "rule": ">= 60%",
+      "why": "model is reasonably sure"
+    },
+    {
+      "name": "Margin over runner-up",
+      "value": "0.99",
+      "passed": true,
+      "rule": ">= 0.20",
+      "why": "decision is not a near tie"
+    },
+    {
+      "name": "Prediction stable under augmentation",
+      "value": "100%",
+      "passed": true,
+      "rule": ">= 80%",
+      "why": "class does not flip with small shifts/rotations/brightness"
+    },
+    {
+      "name": "Explanation is faithful (insertion - deletion AUC)",
+      "value": "+0.32",
+      "passed": true,
+      "rule": ">= +0.05",
+      "why": "revealing highlighted pixels raises, deleting them lowers, P(class)"
+    },
+    {
+      "name": "Region is NECESSARY (removal drops P(class))",
+      "value": "-0.00",
+      "passed": false,
+      "rule": "drop >= 0.15 or flip",
+      "why": "the model needs this region for its answer"
+    },
+    {
+      "name": "Region is SPECIFIC (vs random same-shape regions)",
+      "value": "p = 0.323",
+      "passed": false,
+      "rule": "p <= 0.1",
+      "why": "removing random regions does not hurt as much"
+    },
+    {
+      "name": "Region is SUFFICIENT (keep only region)",
+      "value": "0% of original",
+      "passed": false,
+      "rule": ">= 50%",
+      "why": "the region alone largely reproduces the prediction"
+    },
+    {
+      "name": "Explanation methods agree (mean Spearman)",
+      "value": "0.46",
+      "passed": true,
+      "rule": ">= 0.35",
+      "why": "independent methods point at the same place"
+    },
+    {
+      "name": "Evidence lies inside the brain",
+      "value": "93%",
+      "passed": true,
+      "rule": ">= 90%",
+      "why": "not driven by background / scanner artefacts"
+    },
+    {
+      "name": "Evidence is not just the skull edge",
+      "value": "16% on rim",
+      "passed": true,
+      "rule": "<= 40%",
+      "why": "rim-dominated maps often indicate shortcut learning"
+    },
+    {
+      "name": "Explanation stable under tiny noise",
+      "value": "0.98",
+      "passed": true,
+      "rule": ">= 0.60",
+      "why": "map does not change when the image barely changes"
+    },
+    {
+      "name": "Explanation depends on learned weights (randomisation test)",
+      "value": "|rho| = 0.15",
+      "passed": true,
+      "rule": "|rho| < 0.5",
+      "why": "maps change when weights are randomised (dataset-level test)"
+    }
+  ],
+  "evidence_strength": {
+    "label": "Moderate",
+    "passed": 9,
+    "total": 12,
+    "share": 0.75,
+    "failed": [
+      "Region is NECESSARY (removal drops P(class))",
+      "Region is SPECIFIC (vs random same-shape regions)",
+      "Region is SUFFICIENT (keep only region)"
+    ]
+  },
+  "text": "PREDICTION - notumor. Calibrated confidence 100% (raw 100%), margin 0.99 over 'meningioma' (0%). Under 16 small test-time changes the same class was returned 100% of the time. Ground truth: notumor -> the prediction is CORRECT.\n\nWHERE - Combining 4 explanation method(s); the methods agree with Spearman rho = 0.46, the strongest evidence for 'notumor' forms 3 region(s) covering 3.2% of the brain (small), located middle, in the right half of the image, at mid-depth. 93% of the explanation lies inside the brain and 16% on its outer rim. Best single method by faithfulness: Integrated Gradients (insertion-deletion = +0.40).\n\nWHICH FEATURES - Inside this region the tissue is similar in brightness to the surrounding brain (-0.4 SD); the region is elongated with a sharp boundary, heterogeneous texture (heterogeneity 1.02, entropy 2.68 bits) and markedly asymmetric vs. the opposite side. Compared with correctly classified 'notumor' cases in your data, the most typical features are boundary_sharpness (z=+0.1), glcm_contrast (z=-0.2), compactness (z=-0.3); unusual: midline_offset (z=+2.5).\n\nFEATURE ATTRIBUTION - An interpretable surrogate (agrees with the CNN 75% of the time vs 30% for always guessing the majority class) credits these features for the prediction: heterogeneity=1.02 (+0.63), compactness=0.11 (+0.40), contrast_z=-0.39 (+0.37), rel_y=0.10 (+0.31); against it: midline_offset=0.65 (-0.26), eccentricity=0.97 (-0.25), n_components=3.00 (-0.18), glcm_homogeneity=0.68 (-0.09).\n\nCAUSAL CHECK - Removing that region lowers P(notumor) from 1.00 to 1.00 (-0.00) but the predicted class stays the same; random same-shape regions lower it by only 0.00 on average (empirical p = 0.323, n = 30). Keeping only the region retains 0% of the original probability.\n\nINTERNAL FEATURES - Feature channels [158, 89, 126, 45, 188] of the last convolution contribute most to the class score. Switching them off lowers P by 0.13 versus 0.00 for the same number of random channels.\n\nWHY NOT 'meningioma'? - Its probability is 0%; after the evidence region is removed it becomes 0%. The evidence map for 'meningioma' correlates +0.86 with the one for 'notumor' (similar regions are used).\n\nSIMILAR CASES - Closest reference images in the model's feature space: notumor (0.97), notumor (0.96), notumor (0.94), notumor (0.94), notumor (0.92). 100% share the predicted class.\n\nEVIDENCE STRENGTH - MODERATE (9/12 checks passed); not satisfied: Region is NECESSARY (removal drops P(class)); Region is SPECIFIC (vs random same-shape regions); Region is SUFFICIENT (keep only region).\n\nCAVEATS - The highlighted region is where the MODEL looked, not a radiologist's tumour outline; intensity words describe the image, not a diagnosis; thresholds are heuristic conventions. This is research software, not a medical device."
+}

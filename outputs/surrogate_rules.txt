@@ -1,0 +1,16 @@
+|--- in_brain_mass <= 0.81
+|   |--- dist_center <= 0.71
+|   |   |--- class: 1
+|   |--- dist_center >  0.71
+|   |   |--- class: 0
+|--- in_brain_mass >  0.81
+|   |--- rel_y <= 0.06
+|   |   |--- dist_center <= 0.61
+|   |   |   |--- class: 3
+|   |   |--- dist_center >  0.61
+|   |   |   |--- class: 0
+|   |--- rel_y >  0.06
+|   |   |--- glcm_contrast <= 4.93
+|   |   |   |--- class: 2
+|   |   |--- glcm_contrast >  4.93
+|   |   |   |--- class: 2

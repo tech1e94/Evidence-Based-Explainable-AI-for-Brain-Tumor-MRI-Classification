@@ -1,0 +1,887 @@
+{
+  "class_names": [
+    "glioma",
+    "meningioma",
+    "notumor",
+    "pituitary"
+  ],
+  "true_label": 0,
+  "pred": 1,
+  "explained_class": 1,
+  "second": 0,
+  "probs_raw": [
+    0.3160744905471802,
+    0.6773943305015564,
+    0.00168370280880481,
+    0.004847540054470301
+  ],
+  "probs_calibrated": [
+    0.35146620869636536,
+    0.6272552013397217,
+    0.00658070994541049,
+    0.014697828330099583
+  ],
+  "temperature": 1.3159930886809037,
+  "confidence": 0.6272552013397217,
+  "margin": 0.2757889926433563,
+  "entropy_norm": 0.5447222409172943,
+  "tta": {
+    "mean_probs": [
+      0.3639703691005707,
+      0.6305407285690308,
+      0.0009496382554061711,
+      0.004539339803159237
+    ],
+    "agreement": 0.75,
+    "std_top": 0.1775786131620407,
+    "mutual_information": 0.07513022422790527,
+    "n": 16
+  },
+  "mc_dropout": null,
+  "brain_mask_ok": true,
+  "methods": {
+    "gradcam": {
+      "label": "Grad-CAM",
+      "auc_deletion": 0.19301659623160958,
+      "auc_insertion": 0.803748506307602,
+      "faithfulness": 0.6107319100759924,
+      "curves": {
+        "fractions": [
+          0.0,
+          0.05,
+          0.1,
+          0.15000000000000002,
+          0.2,
+          0.25,
+          0.30000000000000004,
+          0.35000000000000003,
+          0.4,
+          0.45,
+          0.5,
+          0.55,
+          0.6000000000000001,
+          0.65,
+          0.7000000000000001,
+          0.75,
+          0.8,
+          0.8500000000000001,
+          0.9,
+          0.9500000000000001,
+          1.0
+        ],
+        "deletion": [
+          0.6773943305015564,
+          0.6474313139915466,
+          0.5565723180770874,
+          0.4152812957763672,
+          0.33915936946868896,
+          0.3923364281654358,
+          0.37077513337135315,
+          0.4177675247192383,
+          0.2999388575553894,
+          0.03702406585216522,
+          0.008052007295191288,
+          0.005346884950995445,
+          0.0004896569298580289,
+          0.002327551366761327,
+          0.0017438821960240602,
+          0.0023761000484228134,
+          0.0036856303922832012,
+          0.004891516175121069,
+          0.011631148867309093,
+          0.003447963623329997,
+          0.002712267218157649
+        ],
+        "insertion": [
+          0.002712267218157649,
+          0.47507140040397644,
+          0.7647066712379456,
+          0.9417886137962341,
+          0.9581860303878784,
+          0.9657134413719177,
+          0.9060561060905457,
+          0.899222195148468,
+          0.916591227054596,
+          0.8589894771575928,
+          0.8902592062950134,
+          0.786777913570404,
+          0.7566328048706055,
+          0.7198710441589355,
+          0.7471872568130493,
+          0.8207264542579651,
+          0.8231087327003479,
+          0.8306120038032532,
+          0.900163471698761,
+          0.7732527852058411,
+          0.6773943305015564
+        ]
+      }
+    },
+    "gradcampp": {
+      "label": "Grad-CAM++",
+      "auc_deletion": 0.12933314954862,
+      "auc_insertion": 0.6553682625293732,
+      "faithfulness": 0.5260351129807532,
+      "curves": {
+        "fractions": [
+          0.0,
+          0.05,
+          0.1,
+          0.15000000000000002,
+          0.2,
+          0.25,
+          0.30000000000000004,
+          0.35000000000000003,
+          0.4,
+          0.45,
+          0.5,
+          0.55,
+          0.6000000000000001,
+          0.65,
+          0.7000000000000001,
+          0.75,
+          0.8,
+          0.8500000000000001,
+          0.9,
+          0.9500000000000001,
+          1.0
+        ],
+        "deletion": [
+          0.6773943305015564,
+          0.8348732590675354,
+          0.4748047888278961,
+          0.3284267783164978,
+          0.16356980800628662,
+          0.17366757988929749,
+          0.05902564525604248,
+          0.010784083046019077,
+          0.007918938994407654,
+          0.01708906516432762,
+          0.02105216309428215,
+          0.07876090705394745,
+          0.030814683064818382,
+          0.01652473770081997,
+          0.009952093474566936,
+          0.007079375442117453,
+          0.0046663968823850155,
+          0.0035004199016839266,
+          0.0022505007218569517,
+          0.0018484370084479451,
+          0.002712267218157649
+        ],
+        "insertion": [
+          0.002712267218157649,
+          0.7983801364898682,
+          0.9565633535385132,
+          0.9631859660148621,
+          0.8711930513381958,
+          0.5149437785148621,
+          0.7614384889602661,
+          0.7292079925537109,
+          0.6914992928504944,
+          0.6010220646858215,
+          0.5141339898109436,
+          0.5859438180923462,
+          0.4726307690143585,
+          0.4622834324836731,
+          0.5423396825790405,
+          0.5398027896881104,
+          0.7212004661560059,
+          0.6991219520568848,
+          0.6749404668807983,
+          0.6674805879592896,
+          0.6773943305015564
+        ]
+      }
+    },
+    "ig": {
+      "label": "Integrated Gradients",
+      "auc_deletion": 0.08673724170075729,
+      "auc_insertion": 0.666732383519411,
+      "faithfulness": 0.5799951418186537,
+      "curves": {
+        "fractions": [
+          0.0,
+          0.05,
+          0.1,
+          0.15000000000000002,
+          0.2,
+          0.25,
+          0.30000000000000004,
+          0.35000000000000003,
+          0.4,
+          0.45,
+          0.5,
+          0.55,
+          0.6000000000000001,
+          0.65,
+          0.7000000000000001,
+          0.75,
+          0.8,
+          0.8500000000000001,
+          0.9,
+          0.9500000000000001,
+          1.0
+        ],
+        "deletion": [
+          0.6773943305015564,
+          0.19897828996181488,
+          0.1565142720937729,
+          0.3776293098926544,
+          0.24676963686943054,
+          0.12441960722208023,
+          0.06311771273612976,
+          0.05721776932477951,
+          0.03407245874404907,
+          0.02502388320863247,
+          0.07485347986221313,
+          0.012769680470228195,
+          0.004220417235046625,
+          0.0031830924563109875,
+          0.0025815332774072886,
+          0.002595992526039481,
+          0.0026280097663402557,
+          0.0026918589137494564,
+          0.002712267218157649,
+          0.002712267218157649,
+          0.002712267218157649
+        ],
+        "insertion": [
+          0.002712267218157649,
+          0.031717073172330856,
+          0.3450167179107666,
+          0.904815137386322,
+          0.9520364999771118,
+          0.9748415350914001,
+          0.9558218717575073,
+          0.3503972291946411,
+          0.8088814616203308,
+          0.9308050870895386,
+          0.7159540057182312,
+          0.6644591689109802,
+          0.6514487862586975,
+          0.6605916619300842,
+          0.6683452129364014,
+          0.6735159754753113,
+          0.6747098565101624,
+          0.6764485836029053,
+          0.6773943305015564,
+          0.6773943305015564,
+          0.6773943305015564
+        ]
+      }
+    },
+    "occlusion": {
+      "label": "Occlusion",
+      "auc_deletion": 0.4003132210811601,
+      "auc_insertion": 0.3970570566365495,
+      "faithfulness": -0.0032561644446105764,
+      "curves": {
+        "fractions": [
+          0.0,
+          0.05,
+          0.1,
+          0.15000000000000002,
+          0.2,
+          0.25,
+          0.30000000000000004,
+          0.35000000000000003,
+          0.4,
+          0.45,
+          0.5,
+          0.55,
+          0.6000000000000001,
+          0.65,
+          0.7000000000000001,
+          0.75,
+          0.8,
+          0.8500000000000001,
+          0.9,
+          0.9500000000000001,
+          1.0
+        ],
+        "deletion": [
+          0.6773943305015564,
+          0.47050338983535767,
+          0.3948887586593628,
+          0.5533182621002197,
+          0.4565477967262268,
+          0.18399156630039215,
+          0.10596601665019989,
+          0.20422294735908508,
+          0.40444445610046387,
+          0.6090647578239441,
+          0.703572154045105,
+          0.7075451016426086,
+          0.5306726694107056,
+          0.7694408297538757,
+          0.7657598257064819,
+          0.7023769021034241,
+          0.07000014185905457,
+          0.023050066083669662,
+          0.007201361004263163,
+          0.0036441627889871597,
+          0.002712267218157649
+        ],
+        "insertion": [
+          0.002712267218157649,
+          0.004271872341632843,
+          0.01252179965376854,
+          0.013797534629702568,
+          0.0382588654756546,
+          0.032253582030534744,
+          0.0865117684006691,
+          0.10969747602939606,
+          0.0841272845864296,
+          0.1457539200782776,
+          0.2201114445924759,
+          0.41256406903266907,
+          0.5943203568458557,
+          0.7865458726882935,
+          0.7812165021896362,
+          0.8672195672988892,
+          0.9714978337287903,
+          0.9188904762268066,
+          0.7994691729545593,
+          0.7220583558082581,
+          0.6773943305015564
+        ]
+      }
+    }
+  },
+  "method_errors": {},
+  "consensus": {
+    "methods_used": [
+      "gradcam",
+      "gradcampp",
+      "ig"
+    ],
+    "primary": "gradcam",
+    "auc_deletion": 0.10702111356658862,
+    "auc_insertion": 0.7739388436079025,
+    "faithfulness": 0.6669177300413139,
+    "curves": {
+      "fractions": [
+        0.0,
+        0.05,
+        0.1,
+        0.15000000000000002,
+        0.2,
+        0.25,
+        0.30000000000000004,
+        0.35000000000000003,
+        0.4,
+        0.45,
+        0.5,
+        0.55,
+        0.6000000000000001,
+        0.65,
+        0.7000000000000001,
+        0.75,
+        0.8,
+        0.8500000000000001,
+        0.9,
+        0.9500000000000001,
+        1.0
+      ],
+      "deletion": [
+        0.6773943305015564,
+        0.47117236256599426,
+        0.37916329503059387,
+        0.28630688786506653,
+        0.22934307157993317,
+        0.08499318361282349,
+        0.13842925429344177,
+        0.010553635656833649,
+        0.028987670317292213,
+        0.03196912258863449,
+        0.009065624326467514,
+        0.016058044508099556,
+        0.04505181312561035,
+        0.03529615327715874,
+        0.014409842900931835,
+        0.005144042428582907,
+        0.004347464069724083,
+        0.0038016275502741337,
+        0.0032940059900283813,
+        0.0029818604234606028,
+        0.002712267218157649
+      ],
+      "insertion": [
+        0.002712267218157649,
+        0.8167223930358887,
+        0.9585672616958618,
+        0.9765130877494812,
+        0.9323839545249939,
+        0.9278183579444885,
+        0.9216235876083374,
+        0.9022511839866638,
+        0.887428343296051,
+        0.7633046507835388,
+        0.637372612953186,
+        0.5787701606750488,
+        0.5591354966163635,
+        0.7513160705566406,
+        0.8159192800521851,
+        0.7880463600158691,
+        0.7631460428237915,
+        0.7455388903617859,
+        0.7137322425842285,
+        0.6991337537765503,
+        0.6773943305015564
+      ]
+    }
+  },
+  "agreement": {
+    "mean_spearman": 0.4707171059105058,
+    "mean_iou": 0.3874735489115238,
+    "names": [
+      "gradcam",
+      "gradcampp",
+      "ig"
+    ],
+    "spearman": [
+      [
+        1.0,
+        0.7928363352806075,
+        0.11108762591157967
+      ],
+      [
+        0.7928363352806075,
+        1.0,
+        0.5082273565393304
+      ],
+      [
+        0.11108762591157967,
+        0.5082273565393304,
+        1.0
+      ]
+    ],
+    "iou": [
+      [
+        1.0,
+        0.6350602802215706,
+        0.25882721856381313
+      ],
+      [
+        0.6350602802215706,
+        1.0,
+        0.26853314794918787
+      ],
+      [
+        0.25882721856381313,
+        0.26853314794918787,
+        1.0
+      ]
+    ]
+  },
+  "stability": {
+    "mean": 0.9244911885294608,
+    "min": 0.9064993470258793,
+    "values": [
+      0.9105949410019988,
+      0.9064993470258793,
+      0.9638399412118533,
+      0.9082318205926351,
+      0.9332898928149377
+    ],
+    "method": "gradcam"
+  },
+  "causal": {
+    "p_orig": 0.6773943305015564,
+    "p_removed": 0.5124717354774475,
+    "p_kept": 0.9751646518707275,
+    "drop": 0.1649225950241089,
+    "sufficiency": 1.4395819902420044,
+    "class_after_removal": 1,
+    "probs_removed": [
+      0.379340797662735,
+      0.5124717354774475,
+      0.0007583761471323669,
+      0.10742910951375961
+    ],
+    "probs_kept": [
+      0.006889198441058397,
+      0.9751646518707275,
+      7.458197615051176e-06,
+      0.017938736826181412
+    ],
+    "control_drops": [
+      -0.23781758546829224,
+      -0.213830828666687,
+      -0.27737271785736084,
+      -0.16381150484085083,
+      -0.2486470341682434,
+      -0.2670491933822632,
+      -0.2198706865310669,
+      -0.2743185758590698,
+      -0.2115359902381897,
+      -0.1911017894744873,
+      -0.2555956244468689,
+      -0.20958977937698364,
+      -0.2482958436012268,
+      -0.256850004196167,
+      -0.2540242075920105,
+      -0.16478955745697021,
+      -0.23897022008895874,
+      -0.2013174295425415,
+      -0.21830588579177856,
+      -0.24712300300598145,
+      -0.263133704662323,
+      -0.2360551953315735,
+      -0.27434420585632324,
+      -0.2736952304840088,
+      -0.28605687618255615,
+      -0.17632931470870972,
+      -0.27488523721694946,
+      -0.28674089908599854,
+      -0.2634197473526001,
+      -0.16699469089508057
+    ],
+    "n_controls": 30,
+    "control_mean_drop": -0.23672907054424286,
+    "effect_ratio": 164.9225950241089,
+    "p_value": 0.03225806451612903
+  },
+  "features": {
+    "area_frac": 0.046757462982025495,
+    "dist_center": 0.4434299292396804,
+    "depth": 0.779578654154376,
+    "midline_offset": 0.1461444525223447,
+    "rel_x": -0.1461444525223447,
+    "rel_y": -0.3931402312934587,
+    "contrast_z": 0.02235610969364643,
+    "heterogeneity": 0.7156368494033813,
+    "texture_entropy": 2.6701958369114487,
+    "glcm_contrast": 2.3117739104086423,
+    "glcm_homogeneity": 0.7009568213787991,
+    "solidity": 0.9514925373134329,
+    "eccentricity": 0.7393138841436674,
+    "compactness": 0.899131943887288,
+    "boundary_sharpness": 1.7728490829467773,
+    "asymmetry_ratio": 1.3368983268737793,
+    "n_components": 2.0,
+    "in_brain_mass": 0.9838288768541152,
+    "rim_mass": 0.0319411083715919
+  },
+  "feature_words": {
+    "location": "upper, near the midline, deep inside the brain",
+    "size": "small",
+    "intensity": "similar in brightness to the surrounding brain (+0.0 SD)",
+    "shape": "round and compact",
+    "edge": "a sharp boundary",
+    "texture": "heterogeneous",
+    "asymmetry": "mildly asymmetric vs. the opposite side"
+  },
+  "feature_vs_class_profile": {
+    "typical": [
+      {
+        "feature": "rel_y",
+        "z": -0.05521071243984526,
+        "value": -0.3931402312934587,
+        "typical_mean": -0.3701607138142383,
+        "meaning": "vertical position (-1 = top of the brain, +1 = bottom)"
+      },
+      {
+        "feature": "area_frac",
+        "z": -0.5716685082283014,
+        "value": 0.046757462982025495,
+        "typical_mean": 0.05966497042974855,
+        "meaning": "size of the evidence region (fraction of brain area)"
+      },
+      {
+        "feature": "midline_offset",
+        "z": -0.6058894826140873,
+        "value": 0.1461444525223447,
+        "typical_mean": 0.21421374684266997,
+        "meaning": "horizontal distance from the brain midline"
+      }
+    ],
+    "unusual": [
+      {
+        "feature": "compactness",
+        "z": 4.4646400476324635,
+        "value": 0.899131943887288,
+        "typical_mean": 0.21401771452323098,
+        "meaning": "shape compactness (1 = perfect circle, low = irregular)"
+      }
+    ]
+  },
+  "surrogate": {
+    "supporting": [
+      {
+        "feature": "compactness",
+        "value": 0.899131943887288,
+        "z": 3.5492768311754848,
+        "contribution": 1.7685656361813642,
+        "meaning": "shape compactness (1 = perfect circle, low = irregular)"
+      },
+      {
+        "feature": "rim_mass",
+        "value": 0.0319411083715919,
+        "z": -1.2677086448370203,
+        "contribution": 0.38911421190314066,
+        "meaning": "share of the explanation on the outer brain rim / skull edge"
+      },
+      {
+        "feature": "depth",
+        "value": 0.779578654154376,
+        "z": 1.1206171170966635,
+        "contribution": 0.2738759774099859,
+        "meaning": "depth inside the brain (0 = at the surface, 1 = deepest point)"
+      },
+      {
+        "feature": "eccentricity",
+        "value": 0.7393138841436674,
+        "z": -1.5493349024930376,
+        "contribution": 0.2700712199912647,
+        "meaning": "shape eccentricity (0 = round, 1 = elongated)"
+      }
+    ],
+    "opposing": [
+      {
+        "feature": "solidity",
+        "value": 0.9514925373134329,
+        "z": 1.6674916551049237,
+        "contribution": -0.7499798708038657,
+        "meaning": "shape solidity (1 = convex, solid blob)"
+      },
+      {
+        "feature": "in_brain_mass",
+        "value": 0.9838288768541152,
+        "z": 0.7467551006290557,
+        "contribution": -0.6037895678928831,
+        "meaning": "share of the explanation lying inside the brain"
+      },
+      {
+        "feature": "asymmetry_ratio",
+        "value": 1.3368983268737793,
+        "z": -0.4660938930899685,
+        "contribution": -0.22342125253011147,
+        "meaning": "left/right asymmetry inside region vs. whole brain"
+      },
+      {
+        "feature": "n_components",
+        "value": 2.0,
+        "z": -0.8625673907099518,
+        "contribution": -0.14563946281301776,
+        "meaning": "number of separate evidence blobs"
+      }
+    ],
+    "fidelity": 0.75
+  },
+  "surrogate_fidelity": {
+    "logreg": 0.75,
+    "majority_baseline": 0.3
+  },
+  "contrast": {
+    "second": 0,
+    "p_second": 0.35146620869636536,
+    "p_second_after_removal": 0.379340797662735,
+    "class_after_removal": 1,
+    "map_correlation": -0.2793353478546838
+  },
+  "attention": {
+    "spearman_with_consensus": -0.2965955446131712,
+    "iou_with_consensus": 0.0680004256677663
+  },
+  "channels": {
+    "channels": [
+      166,
+      7,
+      124,
+      76,
+      185
+    ],
+    "contribution": [
+      0.0007569681038148701,
+      0.0005691191763617098,
+      0.0005639690207317472,
+      0.00048667678493075073,
+      0.00043082950287498534
+    ],
+    "mean_activation": [
+      1.6001381874084473,
+      2.361713171005249,
+      3.4252824783325195,
+      3.989626884460449,
+      5.291804313659668
+    ],
+    "p_orig": 0.6773943305015564,
+    "ablation_supported": true,
+    "p_without_each": [
+      0.5050835609436035,
+      0.4168533384799957,
+      0.7299395203590393,
+      0.6748412251472473,
+      0.6150234341621399
+    ],
+    "drop_each": [
+      0.17231076955795288,
+      0.26054099202156067,
+      -0.05254518985748291,
+      0.002553105354309082,
+      0.062370896339416504
+    ],
+    "p_without_top_k": 0.30392178893089294,
+    "drop_top_k": 0.37347254157066345,
+    "random_channel_drop_mean": 0.013035762310028075
+  },
+  "neighbours": [
+    {
+      "index": 6,
+      "label": 0,
+      "similarity": 0.9833862781524658,
+      "path": "archive\\Training\\glioma\\Tr-gl_11.jpg"
+    },
+    {
+      "index": 57,
+      "label": 1,
+      "similarity": 0.9688090682029724,
+      "path": "archive\\Training\\meningioma\\Tr-me_220.jpg"
+    },
+    {
+      "index": 23,
+      "label": 0,
+      "similarity": 0.9671807289123535,
+      "path": "archive\\Training\\glioma\\Tr-gl_489.jpg"
+    },
+    {
+      "index": 42,
+      "label": 1,
+      "similarity": 0.9653564691543579,
+      "path": "archive\\Training\\meningioma\\Tr-me_1007.jpg"
+    },
+    {
+      "index": 59,
+      "label": 1,
+      "similarity": 0.9581180214881897,
+      "path": "archive\\Training\\meningioma\\Tr-me_303.jpg"
+    }
+  ],
+  "sanity": {
+    "mean_abs_rho_full_random": 0.14840373215245378,
+    "mean_abs_rho_head_random": 0.47365103688454624,
+    "rho_full": [
+      -0.11667512389989017,
+      0.1226227066957006,
+      0.04056844330215507,
+      0.5871853883529689,
+      0.10115293578780693,
+      0.12600284242545262,
+      -0.026332653151603217,
+      0.2297809181154274,
+      -0.0785984046126075,
+      -0.055117905180925096
+    ],
+    "rho_head": [
+      0.43920129894115306,
+      -0.20068922222377608,
+      -0.6091889463251864,
+      0.9074390241828135,
+      -0.7020993037782124,
+      -0.5864492378670128,
+      0.3273279529334025,
+      -0.10372122573913405,
+      -0.7951966833231707,
+      -0.06519747353160062
+    ],
+    "passed": true
+  },
+  "checklist": [
+    {
+      "name": "Calibrated confidence",
+      "value": "63%",
+      "passed": true,
+      "rule": ">= 60%",
+      "why": "model is reasonably sure"
+    },
+    {
+      "name": "Margin over runner-up",
+      "value": "0.28",
+      "passed": true,
+      "rule": ">= 0.20",
+      "why": "decision is not a near tie"
+    },
+    {
+      "name": "Prediction stable under augmentation",
+      "value": "75%",
+      "passed": false,
+      "rule": ">= 80%",
+      "why": "class does not flip with small shifts/rotations/brightness"
+    },
+    {
+      "name": "Explanation is faithful (insertion - deletion AUC)",
+      "value": "+0.67",
+      "passed": true,
+      "rule": ">= +0.05",
+      "why": "revealing highlighted pixels raises, deleting them lowers, P(class)"
+    },
+    {
+      "name": "Region is NECESSARY (removal drops P(class))",
+      "value": "-0.16",
+      "passed": true,
+      "rule": "drop >= 0.15 or flip",
+      "why": "the model needs this region for its answer"
+    },
+    {
+      "name": "Region is SPECIFIC (vs random same-shape regions)",
+      "value": "p = 0.032",
+      "passed": true,
+      "rule": "p <= 0.1",
+      "why": "removing random regions does not hurt as much"
+    },
+    {
+      "name": "Region is SUFFICIENT (keep only region)",
+      "value": "144% of original",
+      "passed": true,
+      "rule": ">= 50%",
+      "why": "the region alone largely reproduces the prediction"
+    },
+    {
+      "name": "Explanation methods agree (mean Spearman)",
+      "value": "0.47",
+      "passed": true,
+      "rule": ">= 0.35",
+      "why": "independent methods point at the same place"
+    },
+    {
+      "name": "Evidence lies inside the brain",
+      "value": "98%",
+      "passed": true,
+      "rule": ">= 90%",
+      "why": "not driven by background / scanner artefacts"
+    },
+    {
+      "name": "Evidence is not just the skull edge",
+      "value": "3% on rim",
+      "passed": true,
+      "rule": "<= 40%",
+      "why": "rim-dominated maps often indicate shortcut learning"
+    },
+    {
+      "name": "Explanation stable under tiny noise",
+      "value": "0.92",
+      "passed": true,
+      "rule": ">= 0.60",
+      "why": "map does not change when the image barely changes"
+    },
+    {
+      "name": "Explanation depends on learned weights (randomisation test)",
+      "value": "|rho| = 0.15",
+      "passed": true,
+      "rule": "|rho| < 0.5",
+      "why": "maps change when weights are randomised (dataset-level test)"
+    }
+  ],
+  "evidence_strength": {
+    "label": "Strong",
+    "passed": 11,
+    "total": 12,
+    "share": 0.9166666666666666,
+    "failed": [
+      "Prediction stable under augmentation"
+    ]
+  },
+  "text": "PREDICTION - meningioma. Calibrated confidence 63% (raw 68%), margin 0.28 over 'glioma' (35%). Under 16 small test-time changes the same class was returned 75% of the time. Ground truth: glioma -> the prediction is WRONG.\n\nWHERE - Combining 3 explanation method(s); the methods agree with Spearman rho = 0.47, the strongest evidence for 'meningioma' forms 2 region(s) covering 4.7% of the brain (small), located upper, near the midline, deep inside the brain. 98% of the explanation lies inside the brain and 3% on its outer rim. Best single method by faithfulness: Grad-CAM (insertion-deletion = +0.61).\n\nWHICH FEATURES - Inside this region the tissue is similar in brightness to the surrounding brain (+0.0 SD); the region is round and compact with a sharp boundary, heterogeneous texture (heterogeneity 0.72, entropy 2.67 bits) and mildly asymmetric vs. the opposite side. Compared with correctly classified 'meningioma' cases in your data, the most typical features are rel_y (z=-0.1), area_frac (z=-0.6), midline_offset (z=-0.6); unusual: compactness (z=+4.5).\n\nFEATURE ATTRIBUTION - An interpretable surrogate (agrees with the CNN 75% of the time vs 30% for always guessing the majority class) credits these features for the prediction: compactness=0.90 (+1.77), rim_mass=0.03 (+0.39), depth=0.78 (+0.27), eccentricity=0.74 (+0.27); against it: solidity=0.95 (-0.75), in_brain_mass=0.98 (-0.60), asymmetry_ratio=1.34 (-0.22), n_components=2.00 (-0.15).\n\nCAUSAL CHECK - Removing that region lowers P(meningioma) from 0.68 to 0.51 (-0.16) but the predicted class stays the same; random same-shape regions lower it by only -0.24 on average (empirical p = 0.032, n = 30). Keeping only the region retains 144% of the original probability.\n\nINTERNAL FEATURES - Feature channels [166, 7, 124, 76, 185] of the last convolution contribute most to the class score. Switching them off lowers P by 0.37 versus 0.01 for the same number of random channels.\n\nWHY NOT 'glioma'? - Its probability is 35%; after the evidence region is removed it becomes 38%. The evidence map for 'glioma' correlates -0.28 with the one for 'meningioma' (different regions are used).\n\nSIMILAR CASES - Closest reference images in the model's feature space: glioma (0.98), meningioma (0.97), glioma (0.97), meningioma (0.97), meningioma (0.96). 60% share the predicted class.\n\nEVIDENCE STRENGTH - STRONG (11/12 checks passed); not satisfied: Prediction stable under augmentation.\n\nCAVEATS - The highlighted region is where the MODEL looked, not a radiologist's tumour outline; intensity words describe the image, not a diagnosis; thresholds are heuristic conventions. This is research software, not a medical device."
+}

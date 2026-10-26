@@ -1,0 +1,42 @@
+== method_faithfulness
+consensus    0.428506
+gradcampp    0.389825
+ig           0.375007
+gradcam      0.370521
+occlusion    0.305646
+dtype: float64
+
+== correct_vs_wrong
+         confidence    margin  tta_agreement  faith_consensus  agreement  necessity_drop  sufficiency  stability  in_brain_mass  rim_mass  evidence_share
+correct                                                                                                                                                  
+wrong      0.744484  0.535305       0.791667         0.611748   0.441493        0.596759     0.703438   0.960735       0.850261  0.237486        0.804293
+correct    0.880621  0.776137       0.955882         0.396169   0.473579        0.256867     0.590990   0.969844       0.861822  0.203555        0.797906
+
+== error_detection_auroc
+tta_agreement      0.776961
+confidence         0.769608
+margin             0.754902
+stability          0.710784
+in_brain_mass      0.568627
+agreement          0.539216
+evidence_share     0.465686
+sufficiency        0.450980
+rim_mass           0.411765
+faith_consensus    0.230392
+necessity_drop     0.181373
+dtype: float64
+
+== per_class
+            confidence  faith_consensus  necessity_drop  area_frac  contrast_z     depth  evidence_share
+cls                                                                                                     
+glioma        0.815780         0.533469        0.608652   0.029903    1.422323  0.324597        0.780303
+meningioma    0.742357         0.553020        0.293179   0.055629    1.225415  0.568024        0.749369
+notumor       0.898537         0.487728        0.332275   0.059785    0.548956  0.498634        0.772727
+pituitary     0.961410         0.205970        0.174800   0.050272    0.902308  0.641793        0.880051
+
+== evidence_label_counts
+evidence_label
+Strong      24
+Moderate    16
+Name: count, dtype: int64
+
